@@ -53,7 +53,7 @@ build:
     - script:
         name: nosetests
         code: |
-          nosetests -v --with-coverage
+          nosetests -v --with-coverage --cover-erase --cover-package=src
 
     - script:
         name: coveralls
