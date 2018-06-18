@@ -54,5 +54,6 @@ build:
         name: nosetests
         code: |
           nosetests -v --with-coverage --cover-erase --cover-package=src
-          COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls
+          export CI_BUILD_NUMBER=$WERCKER_GIT_COMMIT
+          coveralls
 
