@@ -55,5 +55,8 @@ build:
         code: |
           python -m unittest
 
-    - tcnksm/goveralls:
-        token: $COVERALLS_TOKEN
+    - script:
+        name: coveralls
+        code: |
+          coveralls
+
