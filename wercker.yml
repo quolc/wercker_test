@@ -54,6 +54,7 @@ build:
         name: nosetests
         code: |
           nosetests -v --with-coverage --cover-erase --cover-package=src
-          export CI_BUILD_NUMBER=$WERCKER_GIT_COMMIT
+          export CI_BUILD_URL=$WERCKER_BUILD_URL
+          echo $CI_BUILD_URL
           coveralls
 
