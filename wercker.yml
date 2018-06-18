@@ -58,5 +58,6 @@ build:
           export CI_BUILD_NUMBER=$WERCKER_MAIN_PIPELINE_STARTED
           export CI_BUILD_URL="$WERCKER_RUN_URL"
           export CI_BRANCH="WERCKER_GIT_BRANCH"
+          set
           coveralls
 
