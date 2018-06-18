@@ -54,10 +54,5 @@ build:
         name: nosetests
         code: |
           nosetests -v --with-coverage --cover-erase --cover-package=src
-
-    - script:
-        name: coveralls
-        code: |
-          echo $COVERALLS_REPO_TOKEN
           COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls
 
