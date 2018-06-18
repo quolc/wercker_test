@@ -51,9 +51,9 @@ build:
           echo "pip version $(pip --version) running"
 
     - script:
-        name: unittest
+        name: nosetests
         code: |
-          python -m unittest
+          nosetests -v --with-coverage
 
     - script:
         name: coveralls
