@@ -54,5 +54,5 @@ build:
         name: nosetests
         code: |
           nosetests -v --with-coverage --cover-erase --cover-package=src
-          codecov --t $CODECOV_TOKEN
+          codecov -t $CODECOV_TOKEN
 
