@@ -3,5 +3,5 @@ import main
 
 class MyTestCase(unittest.TestCase):
     def test_func(self):
-        self.assertEqual(main.func(1), 3)
+        self.assertEqual(main.func(1), 2)
 
